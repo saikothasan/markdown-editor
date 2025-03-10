@@ -77,16 +77,14 @@ $$
 Happy writing!
 `
 
-const parseMarkdown = (markdown: string) => {
-  return marked(markdown, {
-    gfm: true,
-    breaks: true,
-    highlight: (code, lang) => {
-      const language = hljs.getLanguage(lang) ? lang : "plaintext"
-      return hljs.highlight(code, { language }).value
-    },
-  })
-}
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+  highlight: (code, lang) => {
+    const language = hljs.getLanguage(lang) ? lang : "plaintext"
+    return hljs.highlight(code, { language }).value
+  },
+})
 
 export function MarkdownEditor() {
   const [markdown, setMarkdown] = useState<string>(initialMarkdown)
@@ -116,7 +114,7 @@ export function MarkdownEditor() {
 
   useEffect(() => {
     try {
-      const parsedHtml = parseMarkdown(markdown)
+      const parsedHtml = marked.parse(markdown)
       setHtml(parsedHtml)
 
       const lines = markdown.split("\n").length
