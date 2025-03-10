@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enhanced Markdown Editor
+
+![GitHub language count](https://img.shields.io/github/languages/count/saikothasan/markdown-editor)
+![GitHub top language](https://img.shields.io/github/languages/top/saikothasan/markdown-editor)
+![GitHub last commit](https://img.shields.io/github/last-commit/saikothasan/markdown-editor)
+![GitHub license](https://img.shields.io/github/license/saikothasan/markdown-editor)
+
+An advanced, feature-rich markdown editor built with Next.js, React, and TypeScript. This project provides a powerful and user-friendly interface for creating and editing markdown content with real-time preview and various advanced features.
+
+## Features
+
+- Real-time markdown preview
+- Syntax highlighting for code blocks
+- LaTeX math equation support
+- Image drag-and-drop functionality
+- Auto-save feature
+- Word count goal with progress bar
+- Keyboard shortcuts for common actions
+- Copy to clipboard functionality
+- Mobile-friendly responsive design
+- Dark mode support
+- Google Analytics integration
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (v14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/saikothasan/markdown-editor.git
+   cd markdown-editor
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add the following:
+   ```
+   NEXT_PUBLIC_GA_ID=your_google_analytics_id
+   ```
+
+### Running the Development Server
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Use the toolbar buttons or keyboard shortcuts to format your markdown
+- Drag and drop images directly into the editor
+- Set a word count goal and track your progress
+- Toggle between edit and preview modes (especially useful on mobile devices)
+- Use the dark/light mode toggle for your preferred viewing experience
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Marked](https://marked.js.org/)
+- [highlight.js](https://highlightjs.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+Saiko Thasan - [@saikothasan](https://github.com/saikothasan)
+
+Project Link: [https://github.com/saikothasan/markdown-editor](https://github.com/saikothasan/markdown-editor)
